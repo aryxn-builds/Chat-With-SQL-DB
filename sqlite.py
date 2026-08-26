@@ -8,7 +8,7 @@ cursor=connection.cursor()
 
 ## create the table
 table_info="""
-create table STUDENT(NAME VARCHAR(25),CLASS VARCHAR(25),
+create table if not exists STUDENT(NAME VARCHAR(25),CLASS VARCHAR(25),
 SECTION VARCHAR(25),MARKS INT)
 """
 
